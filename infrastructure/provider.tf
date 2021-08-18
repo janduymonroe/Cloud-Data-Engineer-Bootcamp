@@ -8,7 +8,7 @@ provider "google" {
 terraform {
   backend "gcs" {
     bucket      = "terraform-state-janduy"
-    prefix      = "state/igti/edc/mod1/terraform.tfstate"
+    prefix      = "state/igti-edc-mod1-terraform.tfstate"
     credentials = secrets.GCP_CREDENTIALS
   }
 }
